@@ -63,6 +63,7 @@ fordson_local_navigation_extend_navigation($PAGE->navigation);
 if ($PAGE->theme->settings->showbacktotop==1) {
 $PAGE->requires->jquery();
 $PAGE->requires->js('/theme/fordson/javascript/scrolltotop.js');
+$PAGE->requires->js('/theme/fordson/javascript/mod_folder.js');
 }
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
