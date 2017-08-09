@@ -23,14 +23,12 @@ class theme_fordson_mod_folder_renderer extends mod_folder_renderer {
         if (empty($tree->folder->showexpanded)) {
             $showexpanded = false;
         }
-        $module = [
+        $module = [ // we have to put own module config array to renderer - to revent 'module.js' file loading!!!
             'name'=>'mod_folder',
             'fullpath'=>'/theme/fordson/javascript/mod_folder.js',
             'requires' => [],
         ];
         $this->page->requires->js_init_call('M.mod_folder.init_tree', array($id, $showexpanded), false, $module);
-        //$this->page->requires->js_init_call('M.mod_folder.init_tree_exp', array($id, $showexpanded));
-        //$this->page->requires->js_init_code('M.mod_folder.init_tree_exp', array($id, $showexpanded));
         return $content;
     }
 
