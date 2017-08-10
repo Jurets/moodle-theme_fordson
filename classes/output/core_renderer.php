@@ -924,4 +924,8 @@ class core_renderer extends \theme_boost\output\core_renderer {
         return $setting != '' ? $setting : '';
     }
 
+    public function should_display_navbar_logo() {
+        return true;
+    }
+
 }
