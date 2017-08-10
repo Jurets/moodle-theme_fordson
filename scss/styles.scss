@@ -789,16 +789,12 @@ a.navbar-brand .site-name.hidden-sm-down {
         margin-bottom: 0;
     }
 } 
-#page-course-view-topcoll, #page-course-view-topics{
-    & .course-content ul.topics li.section{
-        padding: .7rem;
-    }
+#page-course-view-topics .course-content ul.topics li.section{
+    padding: .7rem;
 } 
-#page-course-view-topcoll, #page-course-view-topics{
-    & .course-content ul.topics li.section:target{
-        padding-top: .7rem !important; 
-        margin-top: 0 !important;
-    }
+#page-course-view-topics .course-content ul.topics li.section:target{
+    padding-top: .7rem !important; 
+    margin-top: 0 !important;
 } 
 #page-course-view-topcoll, #page-course-view-topics{
     & .course-content ul.topics li.section .sectionname{
