@@ -771,6 +771,19 @@ body.format-topcoll h3.sectionname:before {
     }
 
 }
+/*Some change for our theme 'fordson'*/
+a.navbar-brand .site-name.hidden-sm-down {display: none;}
+.navbar-brand.hidden-sm-down  {display: none;}
+.headerbkg{display: none;}
+#page-login-index #region-main-box  .card{border: 5px solid #1e9dd8;}
+#page-course-view-topics .course-content ul.topics li.section {margin-bottom: 0;}
+#page-course-view-topics .course-content ul.topics li.section{padding: .7rem;}
+#page-course-view-topics .course-content ul.topics li.section:target{padding-top: .7rem !important; margin-top: 0 !important;}
+#page-course-view-topics .course-content ul.topics li.section .sectionname{margin: .4rem 0; font-size: 1.3rem;}
+#page-course-view-topics  .course-content ul.section{margin: 0;}
+#page-course-view-topics li.section:not([aria-label="General"]) img.activityicon[role="presentation"]{ width: 16px; height: 16px;}
+#page-course-view-topics .activityinstance > a{line-height: 30px;}
+/**/
 
 /*Course collapsed style for topcoll plugin*/
 
