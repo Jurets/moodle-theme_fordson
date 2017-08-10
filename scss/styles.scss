@@ -771,6 +771,12 @@ body.format-topcoll h3.sectionname:before {
     }
 
 }
+
+/*Some change on login page*/
+#page-login-index input#username {
+    margin-bottom: 10px;
+}
+
 /*Some change for our theme 'fordson'*/
 a.navbar-brand .site-name.hidden-sm-down {
     display: none;
