@@ -33,3 +33,25 @@ class theme_fordson_mod_folder_renderer extends mod_folder_renderer {
     }
 
 }
+
+require_once($CFG->dirroot . "/mod/quiz/renderer.php");
+
+class theme_fordson_mod_quiz_renderer extends mod_quiz_renderer {
+
+    public function review_page(quiz_attempt $attemptobj, $slots, $page, $showall,
+                                $lastpage, mod_quiz_display_options $displayoptions,
+                                $summarydata) {
+
+        $output = '';
+        $output .= $this->header();
+        $output .= $this->review_summary_table($summarydata, $page);
+        $output .= $this->review_form($page, $showall, $displayoptions,
+            $this->questions($attemptobj, true, $slots, $page, $showall, $displayoptions),
+            $attemptobj);
+
+        $output .= $this->review_next_navigation($attemptobj, $page, $lastpage, $showall);
+        $this->page->requires->js('/theme/fordson/javascript/bicycle.js',false);
+        $output .= $this->footer();
+        return $output;
+    }
+}
