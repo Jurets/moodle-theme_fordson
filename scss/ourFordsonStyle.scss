@@ -59,3 +59,10 @@ header[role="banner"] .site-name{
     }
 } 
 /**/
+/*change for quize*/
+.que.multichoice .answer div.r0, .que.multichoice .answer div.r1{
+    & .icon{
+        text-indent: 0;
+    }
+
+}
