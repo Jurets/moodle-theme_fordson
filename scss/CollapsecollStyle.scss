@@ -55,11 +55,21 @@ body#page-course-edit select#id_toggleiconset option[value="arrow"],.course-cont
 body.jsenabled #toggle-all, body.jsenabled #topcoll-display-instructions{
     display: none;
 }
-.course-content ul.ctopics li.section.main .side, .course-content ul.ctopics li.tcsection .side{
-    display: none;
+.course-content ul.ctopics li.section.main .side, .course-content ul.ctopics li.section .side{
+    //display: none;
 }
-.course-content ul.ctopics li.section.main .content, .course-content ul.ctopics li.tcsection .content{
-    margin: 0 !important;
+.course-content ul.ctopics li.section.main .content, .course-content ul.ctopics li.section .content{
+    //margin: 0 !important;
+    border-bottom: 1px solid #f4f4f4 !important;
+}
+.course-content ul li.section.main:last-child .content{
+    border-bottom: none !important;
+}
+.course-content ul li.section.main{
+    border-bottom: none;
+}
+.course-content ul li.section.main .cps_centre{
+    display: none !important;
 }
 .course-content ul.ctopics li.section .content .toggle, .course-content ul.ctopics li.section .content.sectionhidden {
     &, &:hover{

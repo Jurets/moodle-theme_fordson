@@ -64,5 +64,25 @@ header[role="banner"] .site-name{
     & .icon{
         text-indent: 0;
     }
-
+}
+/*styles for profile settings content*/
+#page-user-profile #page-content #region-main{
+    position: relative;
+}
+#page-user-profile .profile_tree section:first-of-type{
+    position: static;
+}
+#page-user-profile .userprofile .editprofile{
+    position: absolute;
+    top: -5px;
+    left: 1.25rem;
+}
+#page-user-profile .userprofile .editprofile a{
+    font-weight: 700;
+}
+@media screen and (max-width: 576px){
+    #page-user-profile .userprofile .editprofile{
+        top: -10px;
+        left: .5rem;  
+    }
 }
