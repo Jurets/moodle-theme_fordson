@@ -62,6 +62,8 @@ class core_renderer extends \theme_boost\output\core_renderer {
     public function full_header() {
 
         global $PAGE, $COURSE;
+
+        $PAGE->requires->js('/theme/fordson/javascript/anchor.js',false);
         
         $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'row'));
         $html .= html_writer::start_div('col-xs-12 p-a-1');
