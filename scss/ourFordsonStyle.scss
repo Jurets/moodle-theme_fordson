@@ -86,3 +86,7 @@ header[role="banner"] .site-name{
         left: .5rem;  
     }
 }
+/*fix for css calc on safari*/
+[data-region="drawer"]{
+    height: -webkit-calc(100% - 50px) !important;
+}
