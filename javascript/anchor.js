@@ -1,3 +1,7 @@
+//polyfill for old browsers
+window.requestAnimationFrame = window.requestAnimationFrame || function(C) { return setTimeout(function() { C(+new Date()) }, 30) };
+
+//Smooth scroll to anchor
 window.onload = function () {
     var linkNav = document.querySelectorAll('[href*="#section-"]'),
             V = 1; // speed
@@ -18,6 +22,6 @@ window.onload = function () {
               if (scrollToEl != windScroll + topOfElem - headerHeigtn) {requestAnimationFrame(step)}
             }
             return false;
-          }
         }
+    }
  };
